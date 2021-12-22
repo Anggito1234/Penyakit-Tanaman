@@ -1,0 +1,336 @@
+CRITICAL - 2021-12-14 13:16:04 --> Call to undefined method App\Models\CartModels::count
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Shop.php(14): CodeIgniter\Model->__call('count', Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-14 13:18:00 --> Undefined variable: count
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Views\toko\shop.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 63, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('toko/shop', Array, true)
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Shop.php(19): view('toko/shop', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-14 13:19:05 --> Undefined variable: count
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Views\toko\shop.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 63, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('toko/shop', Array, true)
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Shop.php(19): view('toko/shop', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-14 13:22:21 --> Call to a member function findAll() on int
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:23:37 --> Call to a member function find() on int
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:29:18 --> Call to a member function where() on int
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:31:48 --> Cannot use object of type App\Models\ProdukModels as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:32:07 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::countAll() must be of the type bool, object given, called in C:\xampp\htdocs\Penyakit Tanaman\system\Model.php on line 723
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(723): CodeIgniter\Database\BaseBuilder->countAll(Object(App\Models\ProdukModels))
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Shop.php(14): CodeIgniter\Model->__call('countAll', Array)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-14 13:32:12 --> Cannot use object of type App\Models\ProdukModels as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:32:31 --> Cannot use object of type App\Models\ProdukModels as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:33:36 --> Class 'App\Models\UserModels' not found
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:33:47 --> Cannot use object of type App\Models\UserModel as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:33:50 --> Cannot use object of type App\Models\UserModel as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:34:17 --> Call to a member function findAll() on int
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:34:23 --> Call to a member function find() on int
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:35:04 --> Function name must be a string
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:35:05 --> Function name must be a string
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:35:41 --> Call to a member function count() on int
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:35:46 --> Function name must be a string
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:36:11 --> Call to a member function where() on int
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:36:13 --> Call to a member function where() on int
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:36:17 --> Call to a member function whereAll() on int
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:36:29 --> Call to a member function to() on int
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:36:37 --> Function name must be a string
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:36:42 --> Cannot use object of type App\Models\UserModel as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:36:49 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-12-14 13:36:58 --> Cannot use object of type App\Models\UserModel as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:39:37 --> Call to undefined method App\Models\CartModels::count
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Shop.php(16): CodeIgniter\Model->__call('count', Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-14 13:40:12 --> Undefined variable: id
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Shop.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-14 13:40:23 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::countAll() must be of the type bool, object given, called in C:\xampp\htdocs\Penyakit Tanaman\system\Model.php on line 723
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(723): CodeIgniter\Database\BaseBuilder->countAll(Object(App\Models\UserModel))
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Shop.php(16): CodeIgniter\Model->__call('countAll', Array)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-14 13:40:55 --> Cannot use object of type App\Models\UserModel as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:40:59 --> Cannot use object of type App\Models\UserModel as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:41:33 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:42:20 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:42:31 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:42:36 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:46:27 --> Cannot use object of type App\Models\UserModel as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:47:04 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:47:06 --> Object of class App\Models\UserModel could not be converted to string
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:47:12 --> Cannot use object of type App\Models\UserModel as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:47:13 --> Cannot use object of type App\Models\UserModel as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:53:37 --> Cannot use object of type App\Models\UserModel as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:53:59 --> Cannot use object of type App\Models\UserModel as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:54:00 --> Cannot use object of type App\Models\UserModel as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-14 13:54:19 --> Cannot use object of type App\Models\UserModel as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
