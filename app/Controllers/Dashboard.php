@@ -6,6 +6,7 @@ use Config\App;
 
 use App\Models\GejalaModels;
 use App\Models\PengelolaModels;
+
 class Dashboard extends BaseController
 {
     public function index()
@@ -14,7 +15,8 @@ class Dashboard extends BaseController
     }
 
 
-    public function dataGejala(){
+    public function dataGejala()
+    {
         $gejala = new GejalaModels();
         $model = $gejala->findAll();
         $data = [
@@ -25,27 +27,37 @@ class Dashboard extends BaseController
 
     public function dataPenyakit()
     {
-
     }
 
     public function dataPertanyaan()
     {
-
     }
 
     public function dataRules()
     {
-
     }
 
     public function dataProduk()
     {
-
+        $model = new ProdukModel();
+        $session = session();
+        $fileGambar = $this->request->getFile('poto');
+        $fileGambar->move('gambar/album');
+        $namaGambar = $fileGambar->getName();
+        $data = [
+            'album_judul' => $this->request->getVar('judul'),
+            'album_deskripsi' => $this->request->getVar('deskripsi'),
+            'album_gambar' => $namaGambar,
+            'album_kategori' => $this->request->getVar('kategori'),
+        ];
+        $model->save($data);
+        $session->setFlashdata('pesan', 'Album telah ditambahkan');
+        return redirect()->to('/dashboard');
+        return view('Admin/pages/DataProduk', $data);
     }
 
     public function dataPenjualan()
     {
-
     }
 
     public function dataPengelola()
