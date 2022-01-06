@@ -39,7 +39,7 @@
   <div class="hero_area">
 
     <div class="hero_bg_box">
-      <img src="Home/images/toko.png" alt="">
+      <img src="Home/images/B4.JPG" alt="">
     </div>
 
     <!-- header section strats -->
@@ -62,36 +62,36 @@
                 <a class="nav-link" href="/" style="color: black;">Beranda <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-              <?php if(session()->get('logged_in') == true) : ?>
-                <a class="nav-link" href="#" style="color: black;">Konsultasi</a>
-                <?php else: ?>
-                <a class="nav-link" href="" data-toggle="modal" data-target="#exampleModal" style="color: black;">Konsultasi</a>  
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Login Terlebih Dahulu</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                    <div class="alert alert-primary" role="alert">
-                        Maaf, Konsultasi membutuhkan data anda ! <a href="/Login"> Login Masuk</a>
-                      </div>
-                    </div>
-                    <!-- <div class="modal-footer">
+                <?php if (session()->get('logged_in') == true) : ?>
+                  <a class="nav-link" href="#" style="color: black;">Konsultasi</a>
+                <?php else : ?>
+                  <a class="nav-link" href="" data-toggle="modal" data-target="#exampleModal" style="color: black;">Konsultasi</a>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Login Terlebih Dahulu</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="alert alert-primary" role="alert">
+                            Maaf, Konsultasi membutuhkan data anda ! <a href="/Login"> Login Masuk</a>
+                          </div>
+                        </div>
+                        <!-- <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                       <button type="button" class="btn btn-primary">Save changes</button>
                     </div> -->
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-                <?php endif ?> 
-              </li>              
+                <?php endif ?>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="/shop" style="color: black;">Toko</a>
-              </li>              
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#tentang" style="color: black;"> Tentang</a>
               </li>
@@ -102,32 +102,32 @@
                 <a class="nav-link" href="#pengelola" style="color: red;">Pesan[0]</a>
               </li>
               <li class="nav-item">
-                <?php if(session()->get('logged_in') == true) :?>
-                <a class="nav-link" href="/shop/cartShow" style="color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true">[<?= $count_produk ?>]</i></a>
-                <?php else: ?>
+                <?php if (session()->get('logged_in') == true) : ?>
+                  <a class="nav-link" href="/shop/cartShow" style="color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true">[<?= $count_produk ?>]</i></a>
+                <?php else : ?>
                   <a class="nav-link" href="/shop/cartShow" style="color: red;"><i class="fa fa-shopping-cart" aria-hidden="true">[0]</i></a>
-                  <?php endif ?>
-              </li>              
+                <?php endif ?>
+              </li>
               <form class="form-inline">
                 <!-- <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button> -->
-                <?php if(session()->get('logged_in') == true) : ?>
+                <?php if (session()->get('logged_in') == true) : ?>
                   <div class="dropdown show">
-                  <a style="color: black;" href="#" class="my-2 my-sm-0 dropdown-toggle" style="color: aliceblue;" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-user" aria-hidden="true"> <?=session()->get('username');?></i>
+                    <a style="color: black;" href="#" class="my-2 my-sm-0 dropdown-toggle" style="color: aliceblue;" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-user" aria-hidden="true"> <?= session()->get('username'); ?></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Profile</a>
+                      <!-- <a class="dropdown-item" href="#">Chart</a> -->
+                      <a class="dropdown-item" href="/Login/logout">Logout</a>
+                    </div>
+                  </div>
+                <?php else : ?>
+                  <a style="color: black;" href="/Login" class="my-2 my-sm-0" style="color: aliceblue;">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    Masuk
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">Profile</a>
-                    <!-- <a class="dropdown-item" href="#">Chart</a> -->
-                    <a class="dropdown-item" href="/Login/logout">Logout</a>
-                  </div>
-                  </div>
-                <?php else: ?>
-                <a style="color: black;" href="/Login" class="my-2 my-sm-0" style="color: aliceblue;">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                  Masuk
-                </a>                  
                 <?php endif ?>
                 <!-- <a href="Login" class="my-2 my-sm-0" style="color: aliceblue;">
                   <i class="fa fa-user" aria-hidden="true"></i>
@@ -149,14 +149,14 @@
               <div class="row">
                 <div class="col-md-7">
                   <div class="detail-box">
-                    <h1  style="color: black;">
+                    <h1 style="color: black;">
                       Konsultasi Penyakit Tanaman
                     </h1>
-                    <p  style="color: black;">
-                     Kami memiliki solusi dalam masalah penyakit tanaman dengan melakukan konsultasi dalam upaya menanggulagi masalah penyakit tanaman.
+                    <p style="color: black;">
+                      Kami memiliki solusi dalam masalah penyakit tanaman dengan melakukan konsultasi dalam upaya menanggulagi masalah penyakit tanaman.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1"  style="color: black;">
+                      <a href="" class="btn1" style="color: black;">
                         Konsultasi
                       </a>
                     </div>
@@ -165,29 +165,29 @@
               </div>
             </div>
           </div>
-            </div>
-          </div>
+        </div>
       </div>
+  </div>
 
-    </section>
-    <!-- end slider section -->
+  </section>
+  <!-- end slider section -->
   </div>
 
 
   <!-- department section -->
 
-      <div class="container ">
-        <div class="heading_container heading_center">
-          <h2>
-            Toko Tanaman
-          </h2>
-          <p>
-            Kami memiliki Menjual Tanaman di Toko BB Green House.
-          </p>
-        </div>
-      </div>
+  <div class="container ">
+    <div class="heading_container heading_center">
+      <h2>
+        Toko Tanaman
+      </h2>
+      <p>
+        Kami memiliki Menjual Tanaman di Toko BB Green House.
+      </p>
+    </div>
+  </div>
   <div class="mt-5">
-    
+
   </div>
 
   <!-- end department section -->
@@ -197,63 +197,63 @@
   <section class="about_section layout_margin-bottom">
     <div class="container">
       <div class="row">
-      <?php foreach ($produk as $p) : ?>
-        <div class="col-md-3">
-        <form action="/Shop/beli" method="post" enctype="multipart/form-data" class="row g-3">
-         <?= csrf_field(); ?>
-         <input type="text" name="user" id="user" hidden value="<?=session()->get('user_id');?>">
-         <input type="text" name="produk" id="produk" hidden value="<?= $p['produk_id']; ?>">
-         <input type="text" name="jumlah" id="jumlah" hidden value="1">
-         <input type="text" name="harga" id="harga" hidden value="<?= $p['harga']; ?>">
-        <div class="card" style="width: 17rem;">
-        <img src="Home/images/<?= $p['gambar']; ?>" class="card-img-top" alt="<?= $p['nama']; ?>" width="100" height="180">
-          <div class="card-body">
-            <p style="text-transform: uppercase; font-weight:bold;" ><?= $p['nama']; ?></p>
-            <p>Deskripsi : <span><?= $p['deskripsi']; ?></span></p>
-            <?php if($p['stok'] <= 15) : ?>
-            <p>Stok : <span><?= $p['stok']; ?></span> Tanaman (Terbatas)</p>
-            <?php else :?>
-              <p>Stok : <span><?= $p['stok']; ?></span> Tanaman</p>
-            <?php endif ?>
-            <p class="card-text" style="font-weight: bold;"><span>Rp</span> <?= $p['harga']; ?> <span>,-</span></p>
-            <div class="row">
-            <div class="col-md-3 col-3">
-            <a href="" title="Lihat Detail Tanaman" class="btn btn-primary"><i class="fa fa-eye" aria-hidden="true"></i></a>
-            </div>
-            <div class="col-md-3 col-3">
-            <?php if(session()->get('logged_in') == true) : ?>
-            <button title="Masukan Keranjang" type="submit" class="btn btn-danger"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-            <?php else :?>
-              <a title="Masukan Keranjang" data-toggle="modal" data-target="#exampleModal1" class="btn btn-danger"><i style="color: white;" class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-            <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Login Terlebih Dahulu</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
+        <?php foreach ($produk as $p) : ?>
+          <div class="col-md-3">
+            <form action="/Shop/beli" method="post" enctype="multipart/form-data" class="row g-3">
+              <?= csrf_field(); ?>
+              <input type="text" name="user" id="user" hidden value="<?= session()->get('user_id'); ?>">
+              <input type="text" name="produk" id="produk" hidden value="<?= $p['produk_id']; ?>">
+              <input type="text" name="jumlah" id="jumlah" hidden value="1">
+              <input type="text" name="harga" id="harga" hidden value="<?= $p['harga']; ?>">
+              <div class="card" style="width: 17rem;">
+                <img src="Home/images/<?= $p['gambar']; ?>" class="card-img-top" alt="<?= $p['nama']; ?>" width="100" height="180">
+                <div class="card-body">
+                  <p style="text-transform: uppercase; font-weight:bold;"><?= $p['nama']; ?></p>
+                  <p>Deskripsi : <span><?= $p['deskripsi']; ?></span></p>
+                  <?php if ($p['stok'] <= 15) : ?>
+                    <p>Stok : <span><?= $p['stok']; ?></span> Tanaman (Terbatas)</p>
+                  <?php else : ?>
+                    <p>Stok : <span><?= $p['stok']; ?></span> Tanaman</p>
+                  <?php endif ?>
+                  <p class="card-text" style="font-weight: bold;"><span>Rp</span> <?= $p['harga']; ?> <span>,-</span></p>
+                  <div class="row">
+                    <div class="col-md-3 col-3">
+                      <a href="" title="Lihat Detail Tanaman" class="btn btn-primary"><i class="fa fa-eye" aria-hidden="true"></i></a>
                     </div>
-                    <div class="modal-body">
-                    <div class="alert alert-primary" role="alert">
-                        Maaf, Pembelian Barang Harus Login Terlebih Dahulu ! <a href="/Login"> Login Masuk</a>
-                      </div>
+                    <div class="col-md-3 col-3">
+                      <?php if (session()->get('logged_in') == true) : ?>
+                        <button title="Masukan Keranjang" type="submit" class="btn btn-danger"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                      <?php else : ?>
+                        <a title="Masukan Keranjang" data-toggle="modal" data-target="#exampleModal1" class="btn btn-danger"><i style="color: white;" class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Login Terlebih Dahulu</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="alert alert-primary" role="alert">
+                                  Maaf, Pembelian Barang Harus Login Terlebih Dahulu ! <a href="/Login"> Login Masuk</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      <?php endif ?>
+                    </div>
+                    <div class="col-md-3 col-3">
+                      <a href="" title="Chat Seputar Produk" class="btn btn-primary"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
-              <?php endif ?>
-            </div>
-            <div class="col-md-3 col-3">
-            <a href="" title="Chat Seputar Produk" class="btn btn-primary"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-            </div>
-            </div>
+            </form>
           </div>
-        </div>
-        </form>
-        </div>
         <?php endforeach; ?>
-    </div>
+      </div>
     </div>
   </section>
 
@@ -366,11 +366,11 @@
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved By
           <a href="https://html.design/">Free Html Templates<br><br></a>
-            &copy; <span id="displayYear"></span> Distributed By
-            <a href="https://themewagon.com/">ThemeWagon</a>
+          &copy; <span id="displayYear"></span> Distributed By
+          <a href="https://themewagon.com/">ThemeWagon</a>
         </p>
-       
-      </div>  
+
+      </div>
     </div>
   </footer>
   <!-- footer section -->
