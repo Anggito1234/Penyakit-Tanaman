@@ -27,6 +27,11 @@ class Dashboard extends BaseController
 
     public function dataPenyakit()
     {
+        $data = [
+            'title' => 'DataPenyakit'
+        ];
+
+        return view('dataPenyakit/BerandaIndex', $data);
     }
 
     public function dataPertanyaan()
