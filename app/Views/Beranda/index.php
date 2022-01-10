@@ -62,7 +62,6 @@
                 <a class="nav-link" href="#" style="color: black;">Beranda <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-<<<<<<< HEAD
               <?php if(session()->get('logged_in') == true) : ?>
                 <a class="nav-link" href="/konsultasi" style="color: black;">Konsultasi</a>
                 <?php else: ?>
@@ -79,26 +78,6 @@
                     <div class="modal-body">
                     <div class="alert alert-primary" role="alert">
                         Maaf, Konsultasi membutuhkan data anda ! <a href="/Login"> Login Masuk</a>
-=======
-                <?php if (session()->get('logged_in') == true) : ?>
-                  <a class="nav-link" href="#" style="color: black;">Konsultasi</a>
-                <?php else : ?>
-                  <a class="nav-link" href="" data-toggle="modal" data-target="#exampleModal" style="color: black;">Konsultasi</a>
-                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Login Terlebih Dahulu</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="alert alert-primary" role="alert">
-                            Maaf, Konsultasi membutuhkan data anda ! <a href="/Login"> Login Masuk</a>
-                          </div>
-                        </div>
->>>>>>> ac9bb20f7fc5db900ca5dd25c91e0e2eb692d647
                       </div>
                     </div>
                   </div>
@@ -167,11 +146,7 @@
                       Kami memiliki solusi dalam masalah penyakit tanaman dengan melakukan konsultasi dalam upaya menanggulagi masalah penyakit tanaman.
                     </p>
                     <div class="btn-box">
-<<<<<<< HEAD
                       <a href="/" class="btn1" data-toggle="modal" data-target="#exampleModal"  style="color: black;">
-=======
-                      <a href="" class="btn1" style="color: black;">
->>>>>>> ac9bb20f7fc5db900ca5dd25c91e0e2eb692d647
                         Konsultasi
                       </a>
                     </div>
@@ -192,11 +167,7 @@
                       Disini kami menjual berbagai macam jenis tanaman yang kami rawat sendiri dengan melalukan pemeliharaan sesuai standart dan berkualitas.
                     </p>
                     <div class="btn-box">
-<<<<<<< HEAD
                       <a href="/shop" class="btn1"  style="color: black;">
-=======
-                      <a href="" class="btn1" style="color: black;">
->>>>>>> ac9bb20f7fc5db900ca5dd25c91e0e2eb692d647
                         Belanja
                       </a>
                     </div>
@@ -376,7 +347,6 @@
         </p>
       </div>
       <div class="row">
-<<<<<<< HEAD
       <?php foreach ($pengelola as $p) : ?>
         <div class="col-sm-6 col-lg-4 mx-auto">
           <div class="box">
@@ -397,35 +367,6 @@
                 <a href="">
                   <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
-=======
-        <?php foreach ($pengelola as $p) : ?>
-          <div class="col-sm-6 col-lg-4 mx-auto">
-            <div class="box">
-              <div class="img-box">
-                <img src="<?= $p['poto']; ?>" alt="<?= $p['nama']; ?>">
-              </div>
-              <div class="detail-box">
-                <div class="social_box">
-                  <a href="">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                  </a>
-                  <a href="">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                  </a>
-                  <a href="">
-                    <i class="fa fa-youtube" aria-hidden="true"></i>
-                  </a>
-                  <a href="">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                  </a>
-                </div>
-                <h5>
-                  <?= $p['nama']; ?>
-                </h5>
-                <h6 class="">
-                  <?= $p['posisi']; ?>
-                </h6>
->>>>>>> ac9bb20f7fc5db900ca5dd25c91e0e2eb692d647
               </div>
             </div>
           </div>
@@ -764,15 +705,9 @@
       <div class="footer-info">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved By
-<<<<<<< HEAD
           <a href="https://html.design/">Mahasiswa Itenas<br><br></a>
             &copy; <span id="displayYear"></span> Distributed By
             <a href="https://themewagon.com/">B7</a>
-=======
-          <a href="https://html.design/">Free Html Templates<br><br></a>
-          &copy; <span id="displayYear"></span> Distributed By
-          <a href="https://themewagon.com/">ThemeWagon</a>
->>>>>>> ac9bb20f7fc5db900ca5dd25c91e0e2eb692d647
         </p>
 
       </div>

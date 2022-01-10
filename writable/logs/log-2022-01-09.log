@@ -1547,3 +1547,12 @@ CRITICAL - 2022-01-09 19:45:53 --> count(): Parameter must be an array or an obj
 #5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #7 {main}
+CRITICAL - 2022-01-09 19:55:54 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
