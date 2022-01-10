@@ -63,7 +63,7 @@
               </li>
               <li class="nav-item">
               <?php if(session()->get('logged_in') == true) : ?>
-                <a class="nav-link" href="#" style="color: black;">Konsultasi</a>
+                <a class="nav-link" href="/konsultasi" style="color: black;">Konsultasi</a>
                 <?php else: ?>
                 <a class="nav-link" href="" data-toggle="modal" data-target="#exampleModal" style="color: black;">Konsultasi</a>  
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -148,7 +148,7 @@
                      Kami memiliki solusi dalam masalah penyakit tanaman dengan melakukan konsultasi dalam upaya menanggulagi masalah penyakit tanaman.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1"  style="color: black;">
+                      <a href="/" class="btn1" data-toggle="modal" data-target="#exampleModal"  style="color: black;">
                         Konsultasi
                       </a>
                     </div>
@@ -169,7 +169,7 @@
                       Disini kami menjual berbagai macam jenis tanaman yang kami rawat sendiri dengan melalukan pemeliharaan sesuai standart dan berkualitas.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1"  style="color: black;">
+                      <a href="/shop" class="btn1"  style="color: black;">
                         Belanja
                       </a>
                     </div>
@@ -309,7 +309,7 @@
       <div class="row">
         <div class="col-md-6 ">
           <div class="img-box">
-            <img src="Home/images/about-img.jpg" alt="">
+            <img src="Home/images/penyakitTanaman.jpg" alt="">
           </div>
         </div>
         <div class="col-md-6">
@@ -326,7 +326,7 @@
               the middle of text. All
             </p>
             <a href="">
-              Read More
+              Baca Selengkapnya..
             </a>
           </div>
         </div>
@@ -353,7 +353,7 @@
         <div class="col-sm-6 col-lg-4 mx-auto">
           <div class="box">
             <div class="img-box">
-              <img src="<?= $p['poto']; ?>" alt="<?= $p['nama']; ?>">
+              <img src="Home/images/businessman.png" alt="<?= $p['nama']; ?>">
             </div>
             <div class="detail-box">
               <div class="social_box">
@@ -692,9 +692,7 @@
               <a class="" href="departments.html">
                 Departments
               </a>
-              <a class="" href="doctors.html">
-                Doctors
-              </a>
+
               <a class="" href="contact.html">
                 Contact Us
               </a>
@@ -716,9 +714,9 @@
       <div class="footer-info">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates<br><br></a>
+          <a href="https://html.design/">Mahasiswa Itenas<br><br></a>
             &copy; <span id="displayYear"></span> Distributed By
-            <a href="https://themewagon.com/">ThemeWagon</a>
+            <a href="https://themewagon.com/">B7</a>
         </p>
        
       </div>  

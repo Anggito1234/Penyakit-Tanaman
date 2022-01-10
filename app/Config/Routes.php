@@ -34,10 +34,12 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/Login', 'Login::index');
 $routes->get('/shop', 'Shop::index');
+$routes->get('/shop/detail', 'Shop::detail');
 $routes->get('/Dashboard/', 'Dashboard::index', ['filter' => 'auth']);
 $routes->get('/Dashboard/dataGejala', 'Dashboard::dataGejala', ['filter' => 'auth']);
 $routes->get('/Dashboard/dataPengelola', 'Dashboard::dataPengelola', ['filter' => 'auth']);
-
+$routes->get('/konsultasi', 'Home::konsultasi', ['filter' => 'auth']);
+$routes->get('/hasil-konsultasi', 'Home::diagnosa', ['filter' => 'auth']);
 /*
  * --------------------------------------------------------------------
  * Additional Routing

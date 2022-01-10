@@ -1,0 +1,80 @@
+CRITICAL - 2021-12-21 22:31:54 --> Invalid file: detail.php
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detail.php')
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('detail', Array, true)
+#2 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Shop.php(73): view('detail')
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->detail()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-21 22:32:42 --> Invalid file: detail_view.php
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detail_view.php')
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('detail_view', Array, true)
+#2 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Shop.php(87): view('detail_view', Array)
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->detail()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-21 22:32:45 --> Invalid file: detail_view.php
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detail_view.php')
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('detail_view', Array, true)
+#2 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Shop.php(87): view('detail_view', Array)
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->detail()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-21 22:32:51 --> Invalid file: detail_view.php
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detail_view.php')
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('detail_view', Array, true)
+#2 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Shop.php(87): view('detail_view', Array)
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->detail()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-21 22:54:22 --> Undefined variable: p
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Views\toko\detail_view.php(200): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 200, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('toko/detail_vie...', Array, true)
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Shop.php(87): view('toko/detail_vie...', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->detail()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-21 23:24:43 --> Too few arguments to function App\Controllers\Shop::detail(), 0 passed in C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->detail()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-21 23:25:11 --> Too few arguments to function App\Controllers\Shop::detail(), 0 passed in C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->detail()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-21 23:25:26 --> Too few arguments to function App\Controllers\Shop::detail(), 0 passed in C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->detail()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-21 23:27:01 --> Too few arguments to function App\Controllers\Shop::detail(), 0 passed in C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->detail()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}

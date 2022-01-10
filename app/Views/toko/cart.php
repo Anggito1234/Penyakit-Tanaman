@@ -197,7 +197,7 @@
       <div class="row">
       <?php foreach ($cart as $p) : ?>
         <div class="col-12 col-md-6">
-      <div class="card mb-3" style="max-width: 100%; background-image:url(/Home/images/toko.png);">
+      <div class="card mb-3" style="max-width: 100%;">
       <!-- <img src="/Home/images/toko.png" class="img-fluid rounded-start" alt="..."> -->
         <div class="row g-0">
           <!-- <div class="col-md-12">
@@ -349,9 +349,6 @@
               </a>
               <a class="" href="departments.html">
                 Departments
-              </a>
-              <a class="" href="doctors.html">
-                Doctors
               </a>
               <a class="" href="contact.html">
                 Contact Us

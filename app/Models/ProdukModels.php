@@ -9,4 +9,8 @@ class ProdukModels extends Model {
 	protected $primaryKey = 'produk_id';
 	protected $allowedFields = ['nama', 'gambar', 'stok', 'deskripsi', 'harga'];
 
+	public function getProduk($slug){
+			return $this->where(['nama' => $slug])->first();
+	   }
+
 }

@@ -1,0 +1,1549 @@
+CRITICAL - 2022-01-09 15:44:04 --> Undefined variable: pengelola
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Views\Beranda\konsultasi.php(352): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 352, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('Beranda/konsult...', Array, true)
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(24): view('Beranda/konsult...')
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->konsultasi()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-09 15:49:18 --> Table 'pakartanaman_db.cart' doesn't exist
+CRITICAL - 2022-01-09 15:49:18 --> Table 'pakartanaman_db.cart' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Shop.php(18): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Shop->index()
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-01-09 15:49:34 --> Error connecting to the database: Unknown database 'pakartanaman_db'
+CRITICAL - 2022-01-09 15:49:34 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pakartanaman_db'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(13): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-09 15:56:35 --> Undefined variable: pengelola
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Views\Beranda\konsultasi.php(352): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 352, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('Beranda/konsult...', Array, true)
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(24): view('Beranda/konsult...')
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->konsultasi()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-09 16:45:12 --> Undefined index: NamaGejala
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Views\Beranda\konsultasi.php(232): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 232, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('Beranda/konsult...', Array, true)
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(31): view('Beranda/konsult...', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->konsultasi()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-09 16:45:41 --> Undefined index: NamaGejala
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Views\Beranda\konsultasi.php(232): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 232, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('Beranda/konsult...', Array, true)
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(31): view('Beranda/konsult...', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->konsultasi()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-09 17:17:40 --> Undefined index: NamaGejala
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Views\Beranda\konsultasi.php(233): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 233, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('Beranda/konsult...', Array, true)
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(31): view('Beranda/konsult...', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->konsultasi()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-09 17:30:00 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 17:30:47 --> Undefined property: App\Controllers\Home::$db
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-01-09 17:35:14 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+CRITICAL - 2022-01-09 17:35:14 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(721): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-09 17:36:57 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+CRITICAL - 2022-01-09 17:36:57 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(721): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-09 17:38:12 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+CRITICAL - 2022-01-09 17:38:12 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(721): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-09 17:39:53 --> Unknown column 'p.KodePenyakit' in 'field list'
+CRITICAL - 2022-01-09 17:39:53 --> Unknown column 'p.KodePenyakit' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(721): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-09 17:42:43 --> Unknown column 'tabel_penyakit' in 'field list'
+CRITICAL - 2022-01-09 17:42:43 --> Unknown column 'tabel_penyakit' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(721): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-09 17:42:52 --> Unknown column 'p.KodePenyakit' in 'field list'
+CRITICAL - 2022-01-09 17:42:52 --> Unknown column 'p.KodePenyakit' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(721): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-09 17:43:50 --> Unknown column 'p.KodePenyakit' in 'field list'
+CRITICAL - 2022-01-09 17:43:50 --> Unknown column 'p.KodePenyakit' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(721): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-09 17:43:56 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+CRITICAL - 2022-01-09 17:43:56 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(721): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-09 17:49:25 --> Unknown column 'p.KodePenyakit' in 'field list'
+CRITICAL - 2022-01-09 17:49:25 --> Unknown column 'p.KodePenyakit' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(721): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(40): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-09 17:50:39 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+CRITICAL - 2022-01-09 17:50:39 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(721): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(40): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-09 17:50:53 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-09 17:51:39 --> Undefined variable: penyakit
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Views\Beranda\hasil.php(232): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 232, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('Beranda/hasil', Array, true)
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(44): view('Beranda/hasil', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-09 17:51:50 --> Cannot use object of type mysqli as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('Beranda/hasil', Array, true)
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(44): view('Beranda/hasil', Array)
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-01-09 17:53:16 --> Cannot use object of type mysqli as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('Beranda/hasil', Array, true)
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(44): view('Beranda/hasil', Array)
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-01-09 17:53:30 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('Beranda/hasil', Array, true)
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(44): view('Beranda/hasil', Array)
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-01-09 17:53:52 --> Cannot use object of type mysqli as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('Beranda/hasil', Array, true)
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(44): view('Beranda/hasil', Array)
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-01-09 17:54:08 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::findAll()
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-09 17:54:18 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-09 17:54:35 --> Cannot use object of type mysqli as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('Beranda/hasil', Array, true)
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(44): view('Beranda/hasil', Array)
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-01-09 17:55:20 --> Cannot use object of type mysqli as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('Beranda/hasil', Array, true)
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(46): view('Beranda/hasil', Array)
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-01-09 17:55:25 --> Cannot use object of type mysqli as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('Beranda/hasil', Array, true)
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(46): view('Beranda/hasil', Array)
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-01-09 17:56:14 --> Cannot use object of type mysqli as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('Beranda/hasil', Array, true)
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(45): view('Beranda/hasil', Array)
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-01-09 17:56:31 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 37, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(37): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 17:56:51 --> Cannot use object of type mysqli as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('Beranda/hasil', Array, true)
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(46): view('Beranda/hasil', Array)
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-01-09 17:57:59 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-09 17:58:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::resultArray()
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-09 17:58:53 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-01-09 18:00:29 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+CRITICAL - 2022-01-09 18:00:29 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(721): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(40): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-09 18:01:26 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+CRITICAL - 2022-01-09 18:01:26 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(721): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(41): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-09 18:02:27 --> Undefined property: App\Controllers\Home::$db
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-01-09 18:03:05 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+CRITICAL - 2022-01-09 18:03:05 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(721): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-09 18:06:16 --> Undefined property: App\Controllers\Home::$db
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-09 18:07:27 --> Undefined property: App\Controllers\Home::$db
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-09 18:07:30 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 36, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(36): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 18:07:43 --> Undefined property: App\Controllers\Home::$db
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-09 18:12:18 --> Undefined property: App\Controllers\Home::$db
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-09 18:13:38 --> Object of class App\Models\PertanyaanModels could not be converted to string
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-01-09 18:14:02 --> Column 'KodePertanyaan' in field list is ambiguous
+CRITICAL - 2022-01-09 18:14:02 --> Column 'KodePertanyaan' in field list is ambiguous
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(721): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-09 18:14:36 --> Undefined property: App\Controllers\Home::$db
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-09 18:15:40 --> Undefined property: App\Controllers\Home::$db
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-09 18:15:43 --> Undefined property: App\Controllers\Home::$db
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-09 18:15:46 --> default is not a valid database connection group.
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(97): CodeIgniter\Database\Config::connect('default')
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(26): CodeIgniter\Model->__construct()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->konsultasi()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 18:15:51 --> default is not a valid database connection group.
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(97): CodeIgniter\Database\Config::connect('default')
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(13): CodeIgniter\Model->__construct()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 18:15:55 --> default is not a valid database connection group.
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(97): CodeIgniter\Database\Config::connect('default')
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(13): CodeIgniter\Model->__construct()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 18:16:22 --> default is not a valid database connection group.
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Model.php(97): CodeIgniter\Database\Config::connect('default')
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(26): CodeIgniter\Model->__construct()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->konsultasi()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 18:16:51 --> Undefined property: App\Controllers\Home::$db
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-09 18:17:20 --> Undefined property: App\Controllers\Home::$default
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-09 18:17:43 --> Undefined variable: db
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-09 18:17:48 --> Undefined variable: db
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-09 18:17:52 --> Undefined property: App\Controllers\Home::$db
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-09 18:19:08 --> Undefined property: App\Controllers\Home::$db
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-09 18:19:52 --> Undefined property: App\Controllers\Home::$db
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-09 18:23:17 --> Undefined variable: db
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 38, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-01-09 18:23:51 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+CRITICAL - 2022-01-09 18:23:51 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:25:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from tabel_rule b, tabel_pertanyaan p where b.KodePertanyaan='Pt008' and p.Ko...' at line 1
+CRITICAL - 2022-01-09 18:25:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from tabel_rule b, tabel_pertanyaan p where b.KodePertanyaan='Pt008' and p.Ko...' at line 1
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:26:59 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+CRITICAL - 2022-01-09 18:26:59 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:27:30 --> Column 'KodePertanyaan' in field list is ambiguous
+CRITICAL - 2022-01-09 18:27:30 --> Column 'KodePertanyaan' in field list is ambiguous
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:27:37 --> Unknown column 'tabel_pertanyaan' in 'field list'
+CRITICAL - 2022-01-09 18:27:37 --> Unknown column 'tabel_pertanyaan' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:29:10 --> Unknown column 'p.KodePertanyaan' in 'field list'
+CRITICAL - 2022-01-09 18:29:10 --> Unknown column 'p.KodePertanyaan' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:29:21 --> Unknown column 'p.tabel_penyakit' in 'field list'
+CRITICAL - 2022-01-09 18:29:21 --> Unknown column 'p.tabel_penyakit' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:30:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from tabel_rule b, p where b.KodePertanyaan='Pt008' and p.KodePertanyaan=b.Ko...' at line 1
+CRITICAL - 2022-01-09 18:30:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from tabel_rule b, p where b.KodePertanyaan='Pt008' and p.KodePertanyaan=b.Ko...' at line 1
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:31:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from tabel_rule b, p where b.KodePertanyaan='Pt008' and p.KodePenyakit=b.Kode...' at line 1
+CRITICAL - 2022-01-09 18:31:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from tabel_rule b, p where b.KodePertanyaan='Pt008' and p.KodePenyakit=b.Kode...' at line 1
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:31:59 --> Table 'pakartanaman_db.p' doesn't exist
+CRITICAL - 2022-01-09 18:31:59 --> Table 'pakartanaman_db.p' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:32:10 --> Table 'pakartanaman_db.p' doesn't exist
+CRITICAL - 2022-01-09 18:32:10 --> Table 'pakartanaman_db.p' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:32:14 --> Table 'pakartanaman_db.p' doesn't exist
+CRITICAL - 2022-01-09 18:32:14 --> Table 'pakartanaman_db.p' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:32:33 --> Table 'pakartanaman_db.p' doesn't exist
+CRITICAL - 2022-01-09 18:32:33 --> Table 'pakartanaman_db.p' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:32:36 --> Table 'pakartanaman_db.p' doesn't exist
+CRITICAL - 2022-01-09 18:32:36 --> Table 'pakartanaman_db.p' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-01-09 18:32:38 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2022-01-09 18:32:46 --> Table 'pakartanaman_db.p' doesn't exist
+CRITICAL - 2022-01-09 18:32:46 --> Table 'pakartanaman_db.p' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:32:54 --> Table 'pakartanaman_db.p' doesn't exist
+CRITICAL - 2022-01-09 18:32:54 --> Table 'pakartanaman_db.p' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:33:03 --> Table 'pakartanaman_db.p' doesn't exist
+CRITICAL - 2022-01-09 18:33:03 --> Table 'pakartanaman_db.p' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:33:19 --> Table 'pakartanaman_db.p' doesn't exist
+CRITICAL - 2022-01-09 18:33:19 --> Table 'pakartanaman_db.p' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:33:41 --> Table 'pakartanaman_db.p' doesn't exist
+CRITICAL - 2022-01-09 18:33:41 --> Table 'pakartanaman_db.p' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:33:59 --> Table 'pakartanaman_db.p' doesn't exist
+CRITICAL - 2022-01-09 18:33:59 --> Table 'pakartanaman_db.p' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:34:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from tabel_rule b, p where b.KodePertanyaan='Pt001' and p.KodePertanyaan=b.Ko...' at line 1
+CRITICAL - 2022-01-09 18:34:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from tabel_rule b, p where b.KodePertanyaan='Pt001' and p.KodePertanyaan=b.Ko...' at line 1
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:34:21 --> Table 'pakartanaman_db.p' doesn't exist
+CRITICAL - 2022-01-09 18:34:21 --> Table 'pakartanaman_db.p' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:34:34 --> Table 'pakartanaman_db.p' doesn't exist
+CRITICAL - 2022-01-09 18:34:34 --> Table 'pakartanaman_db.p' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:34:38 --> Table 'pakartanaman_db.p' doesn't exist
+CRITICAL - 2022-01-09 18:34:38 --> Table 'pakartanaman_db.p' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:35:30 --> Table 'pakartanaman_db.p' doesn't exist
+CRITICAL - 2022-01-09 18:35:30 --> Table 'pakartanaman_db.p' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:35:32 --> Table 'pakartanaman_db.p' doesn't exist
+CRITICAL - 2022-01-09 18:35:32 --> Table 'pakartanaman_db.p' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:35:53 --> Table 'pakartanaman_db.p' doesn't exist
+CRITICAL - 2022-01-09 18:35:53 --> Table 'pakartanaman_db.p' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:36:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where KodePertanyaan='Pt001' and KodePenyakit=KodePenyakit group by KodePenya...' at line 1
+CRITICAL - 2022-01-09 18:36:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where KodePertanyaan='Pt001' and KodePenyakit=KodePenyakit group by KodePenya...' at line 1
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:37:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where KodePertanyaan='Pt001' and KodePenyakit=KodePenyakit group by KodePenya...' at line 1
+CRITICAL - 2022-01-09 18:37:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where KodePertanyaan='Pt001' and KodePenyakit=KodePenyakit group by KodePenya...' at line 1
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:38:16 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+CRITICAL - 2022-01-09 18:38:16 --> Unknown column 'p.tabel_pertanyaan' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:40:55 --> Unknown column 'p.tabel_penyakit' in 'field list'
+CRITICAL - 2022-01-09 18:40:55 --> Unknown column 'p.tabel_penyakit' in 'field list'
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-09 18:42:20 --> Table 'pakartanaman_db.namapenyakit' doesn't exist
+CRITICAL - 2022-01-09 18:42:20 --> Table 'pakartanaman_db.namapenyakit' doesn't exist
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\Database\MySQLi\Connection.php(292): mysqli->query('select DISTINCT...', 0)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select DISTINCT...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select DISTINCT...')
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(39): CodeIgniter\Database\BaseConnection->query('select DISTINCT...')
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-01-09 18:42:42 --> Undefined variable: penyakit
+#0 C:\xampp\htdocs\Penyakit Tanaman\app\Views\Beranda\hasil.php(232): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 232, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('Beranda/hasil', Array, true)
+#4 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(43): view('Beranda/hasil', Array)
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-09 18:42:56 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Penyakit Tanaman\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\Common.php(1097): CodeIgniter\View\View->render('Beranda/hasil', Array, true)
+#3 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(43): view('Beranda/hasil', Array)
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#5 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-01-09 18:43:09 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 18:44:11 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 18:44:46 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 18:45:17 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 18:50:07 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 18:56:04 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 18:57:41 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 18:58:43 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 18:59:53 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:00:01 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:01:39 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:03:33 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:03:45 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:03:58 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:04:45 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:05:55 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:06:30 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:06:49 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:06:59 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:07:14 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:08:42 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:08:53 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:09:36 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:10:45 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:13:05 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:13:15 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:13:28 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:29:02 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:29:42 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:33:09 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:33:32 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:35:02 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:35:20 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:36:08 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:36:51 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:37:03 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:37:20 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:37:34 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:38:03 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:39:42 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:41:21 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:41:45 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:41:58 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:42:10 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:42:25 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:42:33 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:42:46 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:43:29 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:43:39 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:43:46 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:44:01 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:44:15 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:44:39 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:44:51 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:44:59 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-01-09 19:45:53 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\Penyakit Tanaman\app\Controllers\Home.php(35): count(NULL)
+#2 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(824): App\Controllers\Home->diagnosa()
+#3 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\Penyakit Tanaman\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Penyakit Tanaman\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Penyakit Tanaman\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}

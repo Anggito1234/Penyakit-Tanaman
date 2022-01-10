@@ -68,4 +68,23 @@ class Shop extends BaseController
         return view('toko/cart', $data);
     }
 
+    public function detail($slug)
+    {
+        $model = new ProdukModels();
+        $model_user = new UserModel();
+        $countCart = new CartModels();
+       
+        if(session()->get('logged_in') == true){
+            $count = $countCart->like('user_id', session()->get('user_id'))->countAllResults();
+        } 
+        else{
+            $count = $countCart;
+        }
+        $data = [
+            'produk' => $model->getProduk($slug),
+            'count_produk' => $count
+        ];
+        return view('toko/detail_view', $data);
+    }
+
 }
