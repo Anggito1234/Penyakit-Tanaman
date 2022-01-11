@@ -26,7 +26,7 @@
 
   <!-- font awesome style -->
   <link href="/Home/css/font-awesome.min.css" rel="stylesheet" />
-
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <!-- Custom styles for this template -->
   <link href="/Home/css/style.css" rel="stylesheet" />
   <!-- responsive style -->
@@ -219,26 +219,26 @@
   <!-- department section -->
   <div class="mt-5 mb-5">
   <div class="container">
-<form action="/home/diagnosa" method="post">
       <?php foreach ($penyakit as $p):?>
+        <form method="post" id="form-simpan">
         <div class="card">
         <h5 class="card-header bg-info" style="color: white;">Hasil Diagnosa Penyakit</h5>
         <div class="card-body">
           <h5 class="card-title">Data Pengajuan Konsultasi</h5>
           <p class="card-text">Username : <?= session()->get('username')?></p>
-          <p class="card-text">Email : <?= session()->get('email')?></p>
-          <p class="card-text">Alamat : <?= session()->get('alamat')?></p>
-          <p class="card-text">Nama : <?= session()->get('nama')?></p>
+          <input type="text" name="user_id" id="" hidden value="<?= session()->get('user_id')?>">
           <p class="card-text">Penyakit Tanaman Disebabkan Oleh: <?= $p['NamaPenyakit']?></p>
           <p class="card-text">Cara Menangani Penyakit : <br>  <?= $p['Solusi']?></p>
-          <div class="d-flex align-items-start">
-          <button type="submit" name="submit" class="btn btn-info">Simpan dan Print</button>
-          <a href="/konsultasi" class="btn btn-success ml-2">Konsultasi Ulang</a>
+          <p class="card-text">Gejala Penyakit : <br>  <?= $p['Gejala']?></p>
           </div>
         </div>
+          <div class="d-flex align-items-start mt-2">
+          <a href="/Home/printHasil/<?= $p['KodePenyakit']?>" class="btn btn-info">Simpan dan Print</a>
+          <a href="/konsultasi" class="btn btn-success ml-2">Konsultasi Ulang</a>
+          </div>
+          </form>
+          <?php endforeach?>
       </div>
-    <?php endforeach?>
-</form>
 </div>
 </div>
 
@@ -266,6 +266,20 @@
   <!-- footer section -->
  
   <!-- footer section -->
+
+  <script type="text/javascript">
+        $("#simpan").click(function(){
+            var data = $('#form-simpan').serialize();
+            $.ajax({
+                type	: 'POST',
+                url	: "/Home/generate", data: data,
+                cache	: false,
+                success	: function(data){
+                   alert("Berhasil");
+                }
+            });
+        });
+  </script> 
 
   <!-- jQery -->
   <script type="text/javascript" src="/Home/js/jquery-3.4.1.min.js"></script>
