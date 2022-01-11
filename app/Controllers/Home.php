@@ -36,7 +36,7 @@ class Home extends BaseController
        $db = \Config\Database::connect();
        for($x=0;$x<$jumlah_dipilih;$x++){
 
-       $query =	$db->query("select DISTINCT p.KodePenyakit, p.NamaPenyakit from tabel_rule b, tabel_penyakit p where b.KodePertanyaan='$gejala[$x]' and p.KodePenyakit=b.KodePenyakit group by KodePenyakit limit 1");
+       $query =	$db->query("select DISTINCT p.KodePenyakit, p.NamaPenyakit, p.Solusi from tabel_rule b, tabel_penyakit p where b.KodePertanyaan='$gejala[$x]' and p.KodePenyakit=b.KodePenyakit group by KodePenyakit limit 1");
 			
 		$data['penyakit'] = $query->getResultArray();                 
 		}

@@ -229,8 +229,8 @@
           <p class="card-text">Email : <?= session()->get('email')?></p>
           <p class="card-text">Alamat : <?= session()->get('alamat')?></p>
           <p class="card-text">Nama : <?= session()->get('nama')?></p>
-          <p class="card-text">Penyakit Tanaman Ditemukan : <?= $p['NamaPenyakit']?></p>
-          <p class="card-text">Solusi Penyakit : <br> </p>
+          <p class="card-text">Penyakit Tanaman Disebabkan Oleh: <?= $p['NamaPenyakit']?></p>
+          <p class="card-text">Cara Menangani Penyakit : <br>  <?= $p['Solusi']?></p>
           <div class="d-flex align-items-start">
           <button type="submit" name="submit" class="btn btn-info">Simpan dan Print</button>
           <a href="/konsultasi" class="btn btn-success ml-2">Konsultasi Ulang</a>

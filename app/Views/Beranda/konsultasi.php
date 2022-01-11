@@ -213,19 +213,21 @@
 
 
 <div class="container mt-2">
-    <h2 class="text-center">Pilih Salah Satu Gejala Penyakit Tanaman</h2>
+    <h2 class="text-center">Form Gejala Penyakit Tanaman</h2>
+    <p class="text-center mt-2">Sesuaikan dengan kondisi tanaman untuk mengetahui penyakit dan penyuluhan mengenai penyakit tanaman tersebut</p>
 </div>
+
 
   <!-- department section -->
   <div class="mt-5 mb-5">
   <div class="container">
 <form action="/home/diagnosa" method="post">
 <div class="table-responsive">
-  <table class="table">
+  <table class="table table-bordered">
   <thead class="table-dark">
     <tr>
       <th scope="col">Gejala Penyakit</th>
-      <th  scope="col">Ya</th>
+      <th scope="col" class="text-center">Ya</th>
     </tr>
   </thead>
   <tbody>
@@ -243,6 +245,27 @@
   </div>
 </div>
 
+<!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade" id="penjelasanModal" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- end department section -->
 
   <!-- about section -->
@@ -278,6 +301,8 @@
               <?php } ?>
           });
       </script>
+
+
   <!-- jQery -->
   <script type="text/javascript" src="/Home/js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
