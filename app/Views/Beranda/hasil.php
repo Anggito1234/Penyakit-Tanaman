@@ -46,7 +46,7 @@
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/">
             <span style="color: black;">
               BB Green House
             </span>
@@ -59,11 +59,11 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="#" style="color: black;">Beranda <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/" style="color: black;">Beranda <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
               <?php if(session()->get('logged_in') == true) : ?>
-                <a class="nav-link" href="#" style="color: black;">Konsultasi</a>
+                <a class="nav-link" href="/konsultasi" style="color: black;">Konsultasi</a>
                 <?php else: ?>
                 <a class="nav-link" href="" data-toggle="modal" data-target="#exampleModal" style="color: black;">Konsultasi</a>  
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
