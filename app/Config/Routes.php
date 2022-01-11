@@ -40,6 +40,7 @@ $routes->get('/Dashboard/dataGejala', 'Dashboard::dataGejala', ['filter' => 'aut
 $routes->get('/Dashboard/dataPengelola', 'Dashboard::dataPengelola', ['filter' => 'auth']);
 $routes->get('/konsultasi', 'Home::konsultasi', ['filter' => 'auth']);
 $routes->get('/hasil-konsultasi', 'Home::diagnosa', ['filter' => 'auth']);
+$routes->get('/dataPertanyaan', 'Dashboard::dataPertanyaan', ['filter' => 'auth']);
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -47,6 +47,29 @@ class Login extends Controller {
 		}
 	}
 
+	public function registrasi()
+	{
+		return view('/Beranda/registrasi');
+	}
+
+	public function registrasiUser()
+	{
+		$session = session();
+		$model = new UserModel();
+		$data = [
+            'username' => $this->request->getVar('username'),
+            'nama' => $this->request->getVar('nama'),
+            'password' => $this->request->getVar('password'),
+            'role' => $this->request->getVar('role'),
+            'alamat' => $this->request->getVar('alamat'),
+			'email' => $this->request->getVar('email'),
+        ];
+        $model->save($data);
+		$session->setFlashdata('pesan', 'Registrasi Berhasil, Silahkan Login');
+		return redirect()->to('/Login');
+	}
+
+
 	public function logout() {
 		$session = session();
 		$session->destroy();

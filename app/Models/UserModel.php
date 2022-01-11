@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class UserModel extends Model {
 	protected $table = 'tabel_login';
 	protected $primaryKey = 'user_id';
-	protected $allowedFields = ['username', 'password', 'role'];
+	protected $allowedFields = ['username', 'password', 'role' ,'email','alamat' ,'nama'];
 
 	// public function getAdmin($id) {
 	// 	return $this->where(['user_id' => $id])->first();

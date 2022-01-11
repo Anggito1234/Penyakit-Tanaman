@@ -66,7 +66,7 @@
                             </div>
                             <?php else :?>
                             
-                            <?php endif?> 
+                            <?php endif?>  
                             <?php if (session()->get('role') == "superadmin") :?>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collaps" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
@@ -104,31 +104,132 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Dashboard</h1>
-                        <ol class="breadcrumb mb-4">
+                        <h1 class="mt-4">Data Gejala</h1>
+                        <button class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#tambahData">Tambah Data Produk</button>
+                        <!-- <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Dashboard</li>
-                        </ol>
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="card mb-4">
-                                    <div class="card-header">
-                                        <i class="fas fa-chart-area me-1"></i>
-                                        Area Chart Penjualan
-                                    </div>
-                                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
-                                </div>
+                        </ol> -->
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                DataTable Gejala
                             </div>
-                            <div class="col-xl-6">
-                                <div class="card mb-4">
-                                    <div class="card-header">
-                                        <i class="fas fa-chart-bar me-1"></i>
-                                        Bar Chart Penjualan
-                                    </div>
-                                    <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
-                                </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>Nama Produk</th>
+                                            <th>Gambar Produk</th>
+                                            <th>Stok Produk</th>
+                                            <th>Deskrtipsi Produk</th>
+                                            <th>Harga Produk</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <?php foreach ($produk as $p) : ?>
+                                    <tbody>
+                                        <tr>
+                                            <td><?= $p['nama']; ?></td>
+                                            <td><img src="/Home/images/<?= $p['gambar']; ?>" width="100" height="100" alt=""></td>
+                                            <td><?= $p['stok']; ?></td>
+                                            <td><?= $p['deskripsi']; ?></td>
+                                            <td><?= $p['harga']; ?></td>
+                                            <td><button class="btn btn-info"  data-bs-toggle="modal" data-bs-target="#editData-<?= $p['produk_id']; ?>">Edit</button>
+                                        <a class="btn btn-danger" href="/dashboard/hapusProduk/<?= $p['produk_id']; ?>">Hapus</a></td>
+                                        </tr>
+                                    </tbody>
+                    <!-- Modal Edit Data -->
+                    <div class="modal fade" id="editData-<?= $p['produk_id']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Edit Data Produk</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <form action="/dashboard/editProduk" method="post" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nama Produk</label>
+                            <input type="text" value="<?= $p['nama']?>" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="text" hidden value="<?= $p['produk_id']?>" name="id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Gambar Produk</label>
+                            <input type="file" class="form-control" value="<?= $p['gambar']?>" name="gambar" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Harga Produk</label>
+                            <input type="text" name="harga" value="<?= $p['harga']?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Desktipsi</label>
+                            <textarea type="text" name="deskripsi" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"><?= $p['deskripsi']?></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Stok Produk</label>
+                            <input type="text" name="stok" value=" <?= $p['stok']?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Simpan</button>
+                        </div>
+                        </form>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Akhir Modal Data -->                                    
+                                    <?php endforeach; ?>
+                                </table>
                             </div>
                         </div>
+                    </div> 
+
+
+                    <!-- Modal Tambah Data -->
+                    <div class="modal fade" id="tambahData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Tambah Data Produk</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <form action="/dashboard/tambahProduk" method="post" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nama Produk</label>
+                            <input type="text" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Gambar Produk</label>
+                            <input type="file" class="form-control" name="gambar" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Harga Produk</label>
+                            <input type="text" name="harga" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Desktipsi</label>
+                            <textarea type="text" name="deskripsi" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Stok Produk</label>
+                            <input type="text" name="stok" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Simpan</button>
+                        </form>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Akhir -->
                        
+                    
+
+
+
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">

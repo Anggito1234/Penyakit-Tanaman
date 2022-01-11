@@ -266,7 +266,18 @@
   <!-- footer section -->
  
   <!-- footer section -->
+  <script>
+          $(function(){
 
+              <?php if(session()->has("pesan")) { ?>
+                  Swal.fire({
+                      icon: 'success',
+                      title: 'Berhasil',
+                      text: '<?= session("pesan") ?>'
+                  })
+              <?php } ?>
+          });
+      </script>
   <!-- jQery -->
   <script type="text/javascript" src="/Home/js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->

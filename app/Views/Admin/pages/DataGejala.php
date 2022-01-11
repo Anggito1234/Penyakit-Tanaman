@@ -9,6 +9,7 @@
         <link rel="shortcut icon" href="/Home/images/favicon.png" type="">
 
         <title> Dashboard </title>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="/assets/css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
@@ -50,6 +51,7 @@
                                 Dashboard
                             </a>
                             <div class="sb-sidenav-menu-heading">Data Tabel</div>
+                            <?php if (session()->get('role') == "admin") :?>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Penjualan
@@ -57,11 +59,15 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="">Data Produk</a>
+                                    <a class="nav-link" href="/Dashboard/dataProduk">Data Produk</a>
                                     <a class="nav-link" href="">Data Penjualan</a>
                                     <a class="nav-link" href="">Data Pembeli</a>
                                 </nav>
                             </div>
+                            <?php else :?>
+                            
+                            <?php endif?>  
+                            <?php if (session()->get('role') == "superadmin") :?>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collaps" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Data Konsultasi
@@ -69,13 +75,19 @@
                             </a>
                             <div class="collapse" id="collaps" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="">Data Gejala</a>
-                                    <a class="nav-link" href="">Data Penyakit</a>
-                                    <a class="nav-link" href="">Data Pertanyaan</a>
-                                    <a class="nav-link" href="">Data Rules</a>
+                                    <a class="nav-link" href="/Dashboard/dataGejala">Data Gejala</a>
+                                    <a class="nav-link" href="/Dashboard/dataPenyakit">Data Penyakit</a>
+                                    <a class="nav-link" href="/Dashboard/dataPertanyaan">Data Pertanyaan</a>
+                                    <a class="nav-link" href="/Dashboard/dataRule">Data Rules</a>
                                 </nav>
-                            </div>                           
-                            <div class="sb-sidenav-menu-heading">Pesanan</div>
+                            </div>       
+                            <div class="sb-sidenav-menu-heading">Tabel</div>
+                            <a class="nav-link" href="">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Tabel Seluruh Pengguna
+                            </a>
+                            <?php else :?>
+                                <div class="sb-sidenav-menu-heading">Pesanan</div>
                             <a class="nav-link" href="">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Data Pesanan Harian
@@ -84,6 +96,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Data Pengelola
                             </a>
+                            <?php endif?>
                         </div>
                     </div>
                 </nav>
@@ -92,6 +105,7 @@
                 <main>
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">Data Gejala</h1>
+                        <button class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#tambahData">Tambah Data Pertanyaan</button>
                         <!-- <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Dashboard</li>
                         </ol> -->
@@ -113,13 +127,67 @@
                                         <tr>
                                             <td><?= $g['KodeGejala']; ?></td>
                                             <td><?= $g['NamaGejala']; ?></td>
+                                            <td><button class="btn btn-info"  data-bs-toggle="modal" data-bs-target="#editGejala-<?= $g['KodeGejala']; ?>">Edit</button>
+                                        <a class="btn btn-danger" href="/dashboard/hapusGejala/<?= $g['KodeGejala']; ?>">Hapus</a></td>
                                         </tr>
                                     </tbody>
+                                     <!-- Modal Edit Gejala -->
+                                     <div class="modal fade" id="editGejala-<?= $g['KodeGejala']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Edit Data Gejala</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <form action="/dashboard/editGejala" method="post" enctype="multipart/form-data">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Gejala</label>
+                                                <input type="text" value="<?= $g['NamaGejala']?>" name="NamaGejala" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                <input type="text" hidden value="<?= $g['KodeGejala']?>" name="KodeGejala" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="submit" class="btn btn-primary">Simpan</button>
+                                            </div>
+                                            </form>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <!-- Akhir Modal -->
                                     <?php endforeach; ?>
                                 </table>
                             </div>
                         </div>
                     </div> 
+                       
+                    <!-- Modal Tambah Data -->
+                    <div class="modal fade" id="tambahData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Tambah Data Pertanyaan</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <form action="/dashboard/tambahGejala" method="post" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Kode Gejala</label>
+                            <input type="text" name="KodeGejala" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Gejala</label>
+                            <textarea type="text" name="Gejala" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Simpan</button>
+                            </form>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Akhir -->
                        
                 </main>
                 <footer class="py-4 bg-light mt-auto">
@@ -136,6 +204,18 @@
                 </footer>
             </div>
         </div>
+        <script>
+          $(function(){
+
+              <?php if(session()->has("pesan")) { ?>
+                  Swal.fire({
+                      icon: 'success',
+                      title: 'Berhasil',
+                      text: '<?= session("pesan") ?>'
+                  })
+              <?php } ?>
+          });
+      </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="/assets/js/scripts.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>

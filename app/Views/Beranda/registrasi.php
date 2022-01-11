@@ -8,8 +8,8 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
-	<link rel="stylesheet" href="Home/css/css/style.css">
-	<link rel="shortcut icon" href="Home/images/favicon.png" type="">
+	<link rel="stylesheet" href="/Home/css/css/style.css">
+	<link rel="shortcut icon" href="/Home/images/favicon.png" type="">
 
 	<title> BB Green House </title>
 
@@ -29,7 +29,7 @@
 						<div class="login-wrap p-4 p-md-5">
 			      	<div class="d-flex">
 			      		<div class="w-100">
-			      			<h3 class="mb-4">Masuk</h3>
+			      			<h3 class="mb-4">Registrasi</h3>
 			      		</div>
 								<div class="w-100">
 									<p class="social-media d-flex justify-content-end">
@@ -38,54 +38,50 @@
 									</p>
 								</div>
 			      	</div>
-					<form action="/login/auth" method="post" class="signin-form">
+					<form action="/Login/registrasiUser" method="post" class="signin-form">
 					<?php if (session()->getFlashdata('msg')): ?>
                     <div class="alert alert-danger">
                         <?=session()->getFlashdata('msg')?>
                         </div>
 					<?php endif;?>
-					<?php if (session()->getFlashdata('pesan')): ?>
-                    <div class="alert alert-success">
-                        <?=session()->getFlashdata('pesan')?>
-                        </div>
-					<?php endif;?>
-			      		<div class="form-group mt-3">
-			      			<input type="text" class="form-control" name="username" required>
-			      			<label class="form-control-placeholder" for="username">Username</label>
-			      		</div>
+					<input type="text" class="form-control" name="role" hidden value="user">
+					<div class="form-group mt-3">
+						<input type="text" class="form-control" name="username" required>
+						<label class="form-control-placeholder" for="username">Username</label>
+					</div>
+					<div class="form-group mt-3">
+						<input type="text" class="form-control" name="email" required>
+						<label class="form-control-placeholder" for="Email">Email</label>
+					</div>
+					<div class="form-group mt-3">
+						<input type="text" class="form-control" name="nama" required>
+						<label class="form-control-placeholder" for="Nama">Nama</label>
+					</div>
+					<div class="form-group mt-3">
+						<input type="text" class="form-control" name="alamat" required>
+						<label class="form-control-placeholder" for="Alamat">Alamat</label>
+					</div>
 		            <div class="form-group">
-		              <input id="password-field" type="password" class="form-control" name="user_password" required>
+		              <input id="password-field" type="password" class="form-control" name="password" required>
 		              <label class="form-control-placeholder" for="password">Password</label>
 		              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 		            </div>
 		            <div class="form-group">
-		            	<button type="submit" class="form-control btn btn-primary rounded submit px-3">Masuk</button>
-		            </div>
-		            <div class="form-group d-md-flex">
-		            	<div class="w-50 text-left">
-			            	<label class="checkbox-wrap checkbox-primary mb-0">Remember Me
-									  <input type="checkbox" checked>
-									  <span class="checkmark"></span>
-										</label>
-									</div>
-									<div class="w-50 text-md-right">
-										<a href="#">Forgot Password</a>
-									</div>
+		            	<button type="submit" class="form-control btn btn-primary rounded submit px-3">Registrasi</button>
 		            </div>
 		          </form>
-		          <p class="text-center">Tidak Mempunyai Akun? <a href="/Login/registrasi">Registrasi</a></p>
-				  <div class="text-center"><a href="/">Beranda</a></div>
-				</div>
+		          <p class="text-center">Sudah Mempunyai Akun? <a href="/login">Login</a></p>
+		        </div>
 		      </div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<script src="Home/js/js/jquery.min.js"></script>
-  <script src="Home/js/js/popper.js"></script>
-  <script src="Home/js/js/bootstrap.min.js"></script>
-  <script src="Home/js/js/main.js"></script>
+	<script src="/Home/js/js/jquery.min.js"></script>
+  <script src="/Home/js/js/popper.js"></script>
+  <script src="/Home/js/js/bootstrap.min.js"></script>
+  <script src="/Home/js/js/main.js"></script>
 
 	</body>
 </html>

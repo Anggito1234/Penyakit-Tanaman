@@ -17,6 +17,7 @@
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="Home/css/bootstrap.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.js"></script>
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -714,7 +715,18 @@
     </div>
   </footer>
   <!-- footer section -->
+  <script>
+          $(function(){
 
+              <?php if(session()->has("pesan")) { ?>
+                  Swal.fire({
+                      icon: 'success',
+                      title: 'Berhasil',
+                      text: '<?= session("pesan") ?>'
+                  })
+              <?php } ?>
+          });
+      </script>
   <!-- jQery -->
   <script type="text/javascript" src="Home/js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->

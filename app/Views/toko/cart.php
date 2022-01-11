@@ -434,6 +434,18 @@
 		    
 		});
 	</script>
+          <script>
+          $(function(){
+
+              <?php if(session()->has("pesan")) { ?>
+                  Swal.fire({
+                      icon: 'success',
+                      title: 'Berhasil',
+                      text: '<?= session("pesan") ?>'
+                  })
+              <?php } ?>
+          });
+      </script>
     
   </body>
 </html>

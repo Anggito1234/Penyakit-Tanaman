@@ -51,7 +51,6 @@
                                 Dashboard
                             </a>
                             <div class="sb-sidenav-menu-heading">Data Tabel</div>
-                            <?php if (session()->get('role') == "admin") :?>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Penjualan
@@ -64,9 +63,6 @@
                                     <a class="nav-link" href="">Data Pembeli</a>
                                 </nav>
                             </div>
-                            <?php else :?>
-                            
-                            <?php endif?> 
                             <?php if (session()->get('role') == "superadmin") :?>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collaps" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
@@ -104,31 +100,114 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Dashboard</h1>
-                        <ol class="breadcrumb mb-4">
+                        <h1 class="mt-4">Data Rule</h1>
+                        <button class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#tambahData">Tambah Data Rule</button>
+                        <!-- <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Dashboard</li>
-                        </ol>
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="card mb-4">
-                                    <div class="card-header">
-                                        <i class="fas fa-chart-area me-1"></i>
-                                        Area Chart Penjualan
-                                    </div>
-                                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
-                                </div>
+                        </ol> -->
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                DataTable Rule
                             </div>
-                            <div class="col-xl-6">
-                                <div class="card mb-4">
-                                    <div class="card-header">
-                                        <i class="fas fa-chart-bar me-1"></i>
-                                        Bar Chart Penjualan
-                                    </div>
-                                    <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
-                                </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>Nama Penyakit</th>
+                                            <th>Pertanyaan</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <?php foreach ($rule as $r) : ?>
+                                    <tbody>
+                                        <tr>
+                                            <td><?= $r['KodePenyakit']; ?></td>
+                                            <td><?= $r['KodePertanyaan']; ?></td>
+                                            <td><button class="btn btn-info"  data-bs-toggle="modal" data-bs-target="#editRule-<?= $r['KodeRule']; ?>">Edit</button>
+                                        <a class="btn btn-danger" href="/dashboard/hapusRule/<?= $r['KodeRule']; ?>">Hapus</a></td>
+                                        </tr>
+                                    </tbody>
+                                    <!-- Modal Edit Pertanyaan -->
+                                        <div class="modal fade" id="editRule-<?= $r['KodeRule']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Edit Data Rule</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <form action="/dashboard/editRule" method="post" enctype="multipart/form-data">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Penyakit</label>
+                                                <input type="text" value="<?= $r['KodePenyakit']?>" name="KodePenyakit" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                <input type="text" hidden value="<?= $r['KodeRule']?>" name="KodeRule" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Pertanyaan</label>
+                                                <input type="text" value="<?= $r['KodePertanyaan']?>" name="KodePertanyaan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="submit" class="btn btn-primary">Simpan</button>
+                                            </form>
+                                        </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <!-- Akhir Modal -->
+                                    <?php endforeach; ?>
+                                </table>
                             </div>
                         </div>
+                    </div> 
+
+
+                    <!-- Modal Tambah Data -->
+                    <div class="modal fade" id="tambahData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Tambah Data Penyakit</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <form action="/dashboard/tambahRule" method="post" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Pilih Pertanyaan dan Gejala</label>
+                            <select class="form-select" name="KodePertanyaan" aria-label="Default select example">
+                            <?php foreach ($pertanyaan as $pe) : ?>
+                            <option value="<?= $pe['KodePertanyaan']?>"><?= $pe['Pertanyaan']?></option>
+                            <?php endforeach?>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Pilih Nama Penyakit</label>
+                            <select class="form-select" name="KodePenyakit" aria-label="Default select example">
+                            <?php foreach ($penyakit as $pt) : ?>
+                            <option value="<?= $pt['KodePenyakit']?>"><?= $pt['NamaPenyakit']?></option>
+                            <?php endforeach?>
+                            </select>
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Simpan</button>
+                            </form>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Akhir -->
                        
+                    
+                    <!-- Modal Edit Data -->
+
+
+
+
+                    <!-- Akhir Modal Data -->
+
+
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
